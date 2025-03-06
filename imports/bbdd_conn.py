@@ -1,1 +1,0 @@
-from BBDD.ConnBBDD import *
