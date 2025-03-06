@@ -1,4 +1,4 @@
-#  Gestr - SGE
+#  Gestr - ERP
 
 ## Índice
     1. Instrucciones para instalar y ejecutar la aplicación.
