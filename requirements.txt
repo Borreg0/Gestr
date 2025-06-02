@@ -1,0 +1,8 @@
+Faker
+matplotlib
+pandas
+Pillow
+PySide6_Addons
+PySide6_Essentials
+bcrypt
+reportlab
