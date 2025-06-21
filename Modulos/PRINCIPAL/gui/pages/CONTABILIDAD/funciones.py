@@ -34,17 +34,27 @@ def pedidosObtenerProductos():
         conexion = Conn()
         pedidos = conexion.mostrarTodosPedidos()
         for pedido in pedidos:
-            producto_str = pedido.get('productos', '')
-
-            id_producto, resto = producto_str.split(': ')
-            cantidad = int(resto.split()[0])
-
-            if id_producto in total_productos:
-                total_productos[id_producto] += cantidad
-            else:
-                total_productos[id_producto] = cantidad
-    except Exception:
-        pass
+            productos_str = pedido.get('productos', '')
+            lineas_productos = productos_str.splitlines()
+            
+            for linea in lineas_productos:
+                if not linea.strip():
+                    continue
+                if ": " in linea:
+                    id_producto, resto = linea.split(": ", 1) 
+                    partes = resto.split()
+                    if partes:
+                        try:
+                            cantidad = int(partes[0])
+                        except (ValueError, IndexError):
+                            cantidad = 0
+                        
+                        #acumula la cantidad por producto
+                        total_productos[id_producto] = total_productos.get(id_producto, 0) + cantidad
+    except Exception as e:
+        print(f"Error procesando pedidos: {e}")
+    finally:
+        conexion.cerrarConexion()
         
     conexion.cerrarConexion()            
     return total_productos            
