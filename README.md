@@ -9,7 +9,7 @@
 
 - Open it with VSCode or any other IDE and run Gestr.py file
   
-- Sadly due to the magnitude of the project I am unable to use CX_Freeze to compile the app, and other tools didn't work as expected.
+- Sadly, when using CX_Freeze to compile the app, some functions don't work as expected, so, for now, it's better to follow instructions in previous line.
 
 ## **Descripción de los módulos y funcionalidades.**
 
