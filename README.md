@@ -7,7 +7,7 @@
 
 ## **Instrucciones para ejecutar la aplicación.**
 
-- Open it with VSCode or any other IDE and run Gestr.py file
+- Open the folder with VSCode or any other IDE, create virtualenv, install requirements.txt, run Gestr.py file
   
 - Sadly, when using CX_Freeze to compile the app, some functions don't work as expected, so, for now, it's better to follow instructions in previous line.
 
