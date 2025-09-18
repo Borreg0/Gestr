@@ -5,13 +5,11 @@
     2. Descripción de los módulos y funcionalidades.
     3. Herramientas y bibliotecas utilizadas
 
-## **Instrucciones para instalar y ejecutar la aplicación.**
+## **Instrucciones para ejecutar la aplicación.**
 
-- La aplicacion ya viene compilada, pero si se quiere recompilar es posible hacerlo siguiendo estos pasos:
-
-- Usar Cx_Freeze con la configuración del archivo Setup.py.
-
-- Desde la consola: "python Setup.py build"
+- Open it with VSCode or any other IDE and run Gestr.py file
+  
+- Sadly due to the magnitude of the project I am unable to use CX_Freeze to compile the app, and other tools didn't work as expected.
 
 ## **Descripción de los módulos y funcionalidades.**
 
